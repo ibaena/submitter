@@ -1,0 +1,32 @@
+{
+  "name": "forms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/main.scss public/css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibaena/submitter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ibaena/submitter/issues"
+  },
+  "homepage": "https://github.com/ibaena/submitter#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "bower": "^1.7.9",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "nodemon": "^1.10.0"
+  },
+  "devDependencies": {
+    "node-sass": "^3.8.0",
+    "nodemon": "^1.10.0"
+  }
+}
