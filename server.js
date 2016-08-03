@@ -67,9 +67,9 @@ app.listen(PORT, function() {
      if (err) {
        // handle error
        console.log(err);
-       res.send('There was an error sending the email');
+       console.log('There was an error sending the email');
        return;
      }
-     res.send('Email Sent');
+     res.redirect('/')
    });
  });
