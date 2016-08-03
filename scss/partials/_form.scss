@@ -7,7 +7,7 @@
       text-align: center;
       position: relative;
       top: 180px;
-      left: -5px;
+      left: -2px;
     }
     #test-form{
       @include span-columns(12);
@@ -15,8 +15,8 @@
       top: 210px;
         .input-block{
           @include span-columns(4);
-          padding-left: 10px;
-          padding-right: 10px;
+          padding-left: 12px;
+          padding-right: 12px;
           background-color: pink;
             @include shift(4);
             input{

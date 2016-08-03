@@ -1,10 +1,10 @@
 <div class="form-container">
   <h1>Form Submitter</h1>
-  <form id="test-form">
+  <form id="test-form"  method="POST" name="myForm" action="/">
     <div class="inputs">
       <div class="input-block" id="name-input">
         <label for="name">Name</label>
-        <input type="text" name="name" value="" maxlength="30" id="name"/>
+        <input type="text" name="name" value="" maxlength="30" id="name" />
       </div>
       <div class="input-block" id="email-block">
         <label for="email">Email</label>
@@ -15,7 +15,7 @@
         <input type="text" name="phone" value="" maxlength="12" id="phone" />
       </div>
       <div class="input-block" id="button-block">
-        <button>Submit!</button>
+        <button id="submit-form" type="submit">Submit!</button>
       </div>
     </div>
   </form>
