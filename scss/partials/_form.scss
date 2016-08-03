@@ -6,13 +6,13 @@
     h1{
       text-align: center;
       position: relative;
-      top: 180px;
+      padding-top: 150px;
       left: -2px;
     }
     #test-form{
       @include span-columns(12);
       position: relative;
-      top: 210px;
+      padding-top: 50px;
         .input-block{
           @include span-columns(4);
           padding-left: 12px;

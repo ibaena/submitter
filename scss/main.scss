@@ -9,12 +9,13 @@
 
 body{
   background-image: url('http://i.stack.imgur.com/1Tzky.png');
-  background-size: cover;
+  background-size: 100vw 100vh;
   background-repeat: no-repeat;
 }
 
 #form-title{
   font-size: 32px;
+  font-weight: 500;
 }
 #small{
   font-weight: 100;

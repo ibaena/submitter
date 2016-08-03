@@ -204,7 +204,7 @@ html {
   .form-container h1 {
     text-align: center;
     position: relative;
-    top: 180px;
+    padding-top: 150px;
     left: -2px; }
   .form-container #test-form {
     float: left;
@@ -212,7 +212,7 @@ html {
     margin-right: 2.35765%;
     width: 100%;
     position: relative;
-    top: 210px; }
+    padding-top: 50px; }
     .form-container #test-form:last-child {
       margin-right: 0; }
     .form-container #test-form .input-block {
@@ -246,11 +246,12 @@ html {
 
 body {
   background-image: url("http://i.stack.imgur.com/1Tzky.png");
-  background-size: cover;
+  background-size: 100vw 100vh;
   background-repeat: no-repeat; }
 
 #form-title {
-  font-size: 32px; }
+  font-size: 32px;
+  font-weight: 500; }
 
 #small {
   font-weight: 100; }
