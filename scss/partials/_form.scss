@@ -1,7 +1,44 @@
 //Form Styles
 /*Form Styles*/
 
-.container{
+.form-container{
   @include outer-container;
+    h1{
+      text-align: center;
+      position: relative;
+      top: 180px;
+      left: -5px;
+    }
+    #test-form{
+      @include span-columns(12);
+      position: relative;
+      top: 210px;
+        .input-block{
+          @include span-columns(4);
+          padding-left: 10px;
+          padding-right: 10px;
+          background-color: pink;
+            @include shift(4);
+            input{
+              @include span-columns(12);
+            }
+        }
+        #name-input{
+          padding-top: 20px;
+          border-top-left-radius: 8px;
+          border-top-right-radius: 8px;
+        }
+        #email-block{
+
+        }
+        #phone-block{
+          padding-bottom: 5px;
+        }
+        #button-block{
+          padding-bottom: 15px;
+          border-bottom-left-radius: 8px;
+          border-bottom-right-radius: 8px;
+        }
+    }
 
 }

@@ -193,11 +193,58 @@ html {
   box-sizing: inherit; }
 
 /*Form Styles*/
-.container {
+.form-container {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto; }
-  .container::after {
+  .form-container::after {
     clear: both;
     content: "";
     display: block; }
+  .form-container h1 {
+    text-align: center;
+    position: relative;
+    top: 180px;
+    left: -5px; }
+  .form-container #test-form {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    position: relative;
+    top: 210px; }
+    .form-container #test-form:last-child {
+      margin-right: 0; }
+    .form-container #test-form .input-block {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%;
+      padding-left: 10px;
+      padding-right: 10px;
+      background-color: pink;
+      margin-left: 34.11922%; }
+      .form-container #test-form .input-block:last-child {
+        margin-right: 0; }
+      .form-container #test-form .input-block input {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%; }
+        .form-container #test-form .input-block input:last-child {
+          margin-right: 0; }
+    .form-container #test-form #name-input {
+      padding-top: 20px;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px; }
+    .form-container #test-form #phone-block {
+      padding-bottom: 5px; }
+    .form-container #test-form #button-block {
+      padding-bottom: 15px;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px; }
+
+body {
+  background-image: url("http://i.stack.imgur.com/1Tzky.png");
+  background-size: cover;
+  background-repeat: no-repeat; }
