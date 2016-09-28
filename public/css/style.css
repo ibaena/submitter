@@ -342,7 +342,8 @@ html {
     width: 300px;
     background-color: red;
     position: relative;
-    z-index: -9999; }
+    z-index: -9999;
+    overflow-x: hidden; }
     .css-wrapper .full-column-offset:last-child {
       margin-right: 0; }
     .css-wrapper .full-column-offset .show-media {
@@ -354,7 +355,9 @@ html {
         margin: 0 auto; }
     .css-wrapper .full-column-offset #bottom-media {
       bottom: 0; }
-    .css-wrapper .full-column-offset #stetson-btm-wrapper {
+    .css-wrapper .full-column-offset #stetson-btm-wrapper,
+    .css-wrapper .full-column-offset #addidas-btm-wrapper,
+    .css-wrapper .full-column-offset #jovan-btm-wrapper {
       bottom: 0; }
     .css-wrapper .full-column-offset .top-wrapper {
       background-color: green;
@@ -401,6 +404,15 @@ html {
 /*img wrapper */
 #stetson .show-media {
   z-index: -1; }
+
+#addidas .show-media {
+  z-index: -2; }
+
+#jovan .show-media {
+  z-index: -3; }
+
+#final .show-media {
+  z-index: -4; }
 
 body {
   background-image: url("http://i.stack.imgur.com/1Tzky.png");
