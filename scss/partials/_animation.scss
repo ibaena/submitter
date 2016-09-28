@@ -15,6 +15,7 @@
     width: 300px;
     background-color: red;
     position: relative;
+    z-index: -9999;
 
     .show-media {
       position: absolute;
@@ -72,3 +73,9 @@
 }
 
 /*img wrapper */
+
+#stetson {
+  .show-media {
+    z-index: -1;
+  }
+}

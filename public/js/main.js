@@ -27,11 +27,11 @@ $(document).ready(function() {
 
         setTimeout(function(){
             if (unwrapBtm && unwrapTop === true){
-                $('#bottom-media').addClass('animated slideOutLeft');
+                $('#bottom-media').addClass('animated slideOutLeft soft-hide');
 
 
                 setTimeout(function() {
-                    $('#top-media').addClass('animated slideOutRight');
+                    $('#top-media').addClass('animated slideOutRight soft-hide');
 
                 }, 1000)
             }

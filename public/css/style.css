@@ -269,7 +269,8 @@ html {
     height: 250px;
     width: 300px;
     background-color: red;
-    position: relative; }
+    position: relative;
+    z-index: -9999; }
     .css-wrapper .full-column-offset:last-child {
       margin-right: 0; }
     .css-wrapper .full-column-offset .show-media {
@@ -327,6 +328,9 @@ html {
   z-index: 1; }
 
 /*img wrapper */
+#stetson .show-media {
+  z-index: -1; }
+
 body {
   background-image: url("http://i.stack.imgur.com/1Tzky.png");
   background-size: 100vw 100vh;
