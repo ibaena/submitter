@@ -27,12 +27,12 @@ $(document).ready(function() {
 
         setTimeout(function(){
             if (unwrapBtm && unwrapTop === true){
-                $('.unwrap-img-left').addClass('animated slideOutLeft soft-hide');
-                $('#stetson-btm-wrapper').removeClass('hidden').addClass('btm-wrapper');
+                $('#bottom-media').addClass('animated slideOutLeft');
+
 
                 setTimeout(function() {
-                    $('.unwrap-img-right').addClass('animated slideOutRight soft-hide');
-                    $('#stetson-top-wrapper').removeClass('hidden');
+                    $('#top-media').addClass('animated slideOutRight');
+
                 }, 1000)
             }
         },2000)

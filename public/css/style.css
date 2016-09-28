@@ -280,8 +280,6 @@ html {
       .css-wrapper .full-column-offset .show-media img {
         display: block;
         margin: 0 auto; }
-    .css-wrapper .full-column-offset .unwrap-img-left {
-      z-index: 9999; }
     .css-wrapper .full-column-offset #bottom-media {
       bottom: 30px; }
     .css-wrapper .full-column-offset #stetson-btm-wrapper {
