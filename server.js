@@ -50,6 +50,12 @@ app.listen(PORT, function() {
         layout : 'main'
      });
  });
+ app.get('/3dcss', function(req, res){
+   res.render('3dcss', {
+        title : '3D CSS',
+        layout : 'main'
+     });
+ });
  app.post('/', function (req, res, next) {
    console.log(req.body);
 

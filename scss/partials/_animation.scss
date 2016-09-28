@@ -1,0 +1,77 @@
+/*3dCSS*/
+//3cCSS
+
+
+.css-wrapper {
+  margin-top: 150px;
+  @include outer-container;
+
+  .full-column {
+    @include span-columns(4);
+  }
+  .full-column-offset {
+    @include span-columns(4);
+    height: 250px;
+    width: 300px;
+    background-color: red;
+    position: relative;
+
+    .show-media {
+      position: absolute;
+      display: block;
+      margin: 0 auto;
+      left: 50px;
+      img {
+        display: block;
+        margin: 0 auto;
+
+      }
+    }
+    .unwrap-img-left{
+      z-index: 9999;
+    }
+    #bottom-media {
+      bottom: 30px;
+    }
+    #stetson-btm-wrapper{
+      bottom: 35px;
+    }
+    .top-wrapper {
+      background-color: green;
+      width: 100%;
+      height: 125px;
+      position: absolute;
+    }
+    .bottom-wrapper{
+      background-color: blue;
+      width: 100%;
+      height: 125px;
+      z-index: 999;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+}
+
+/*Button activation Styles*/
+.btn-wrapper {
+  @include outer-container;
+}
+.btn-group {
+  @include span-columns(12);
+  margin-top: 20px;
+}
+#unwrap-btm {
+  margin-bottom: 20px;
+}
+
+/*hidden class for images behind wrapping*/
+
+.hidden {
+  z-index: -1;
+}
+.soft-hide {
+  z-index: 1;
+}
+
+/*img wrapper */
