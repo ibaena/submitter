@@ -18,24 +18,23 @@ $(document).ready(function() {
 
         $('.bottom-wrapper').addClass('animated  slideOutLeft');
         unwrapBtm = true;
-        console.log(unwrapBtm);
         setTimeout(function() {
             $('.top-wrapper').addClass('animated  slideOutRight');
             unwrapTop = true;
-            console.log(unwrapTop);
-        }, 1050)
+        }, 400);
 
+        // Fires off snippet for second image
         setTimeout(function(){
             if (unwrapBtm && unwrapTop === true){
                 $('#bottom-media').addClass('animated slideOutLeft soft-hide');
 
-
+                // Fires bottom wrapper on second image
                 setTimeout(function() {
                     $('#top-media').addClass('animated slideOutRight soft-hide');
 
-                }, 1000)
+                }, 700)
             }
-        },2000)
+        }, 2000)
 
 
     });
