@@ -282,20 +282,24 @@ html {
 @-webkit-keyframes slideOutLeft {
   from {
     -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); }
+    transform: translate3d(0, 0, 0);
+    }
   to {
     visibility: hidden;
     -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0); } }
+    transform: translate3d(-100%, 0, 0);
+     } }
 
 @keyframes slideOutLeft {
   from {
     -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); }
+    transform: translate3d(0, 0, 0);
+    }
   to {
     visibility: hidden;
     -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0); } }
+    transform: translate3d(-100%, 0, 0);
+     } }
 
 .slideOutLeft {
   -webkit-animation-name: slideOutLeft;
@@ -308,7 +312,8 @@ html {
   to {
     visibility: hidden;
     -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0); } }
+    transform: translate3d(100%, 0, 0);
+    width: 100%;} }
 
 @keyframes slideOutRight {
   from {
@@ -317,7 +322,8 @@ html {
   to {
     visibility: hidden;
     -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0); } }
+    transform: translate3d(100%, 0, 0);
+    width: 100%; } }
 
 .slideOutRight {
   -webkit-animation-name: slideOutRight;
@@ -354,7 +360,7 @@ html {
     }
   }
 
- 
+
 
 
 .css-wrapper {
@@ -467,3 +473,36 @@ body {
 
 #small {
   font-weight: 100; }
+
+/*Rollers*/
+#btm-roller {
+  width: 100%;
+  height: 150px;
+  position: absolute;
+  z-index: 9999;
+  top: 97px;
+  bottom: 0;
+}
+#btm-roller-img {
+  height: 150px;
+  position: absolute;
+  left: 250px;
+}
+
+#top-roller {
+  width: 100%;
+  height: 125px;
+  position: absolute;
+  z-index: 9999;
+  top: 2px;
+  right: 2px
+}
+#top-roller-img {
+  height: 125px;
+  position: absolute;
+}
+
+/*Hidden class*/
+.hide-roller {
+  display: none;
+}

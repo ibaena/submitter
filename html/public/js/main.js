@@ -20,66 +20,95 @@ $(document).ready(function() {
 
     $('#launch-wrappers').on('click', function() {
 
+
         $('.bottom-wrapper').addClass('animated  slideOutLeft');
         unwrapBtm = true;
         setTimeout(function() {
             $('.top-wrapper').addClass('animated  slideOutRight');
             unwrapTop = true;
-        }, 400);
+        }, 700);
 
         // Fires off snippet for second image
-        setTimeout(function(){
-            if (unwrapBtm && unwrapTop === true){
+        setTimeout(function() {
+            $('#btm-roller').hide();
+            if (unwrapBtm && unwrapTop === true) {
                 $('#bottom-media').addClass('animated slideOutLeft');
-                
+                $('#btm-roller').show().addClass('animated slideOutLeft');
+                $('#btm-roller-img').addClass('slideLeft');
 
                 // Fires bottom wrapper on second image
                 setTimeout(function() {
+                    $('#btm-roller').hide();
+
                     $('#top-media').addClass('animated slideOutRight');
-                   
+                    $('#top-roller').show().addClass('animated slideOutRight');
+                    $('#top-roller-img').addClass('slideRight');
+
 
                 }, 700)
+                $('#top-roller').hide();
             }
         }, 2000)
 
         // Fires off snippet for third image
-        setTimeout(function(){
-                $('#stetson-btm-wrapper').addClass('animated slideOutLeft');
-                // Fires bottom wrapper on second image
-                setTimeout(function() {
-                    $('#stetson-top-wrapper').addClass('animated slideOutRight');
+        setTimeout(function() {
+            $('#stetson-btm-wrapper').addClass('animated slideOutLeft');
+            $('#btm-roller').show().addClass('animated slideOutLeft');
+            $('#btm-roller-img').addClass('slideLeft');
+            // Fires bottom wrapper on second image
+            setTimeout(function() {
+                $('#btm-roller').hide();
 
-                }, 700)
+                $('#stetson-top-wrapper').addClass('animated slideOutRight');
+                $('#top-roller').show().addClass('animated slideOutRight');
+                $('#top-roller-img').addClass('slideRight');
+
+            }, 700)
+            $('#top-roller').hide();
         }, 4000)
 
         // Fires off snippet for fourth image
-        setTimeout(function(){
-                $('#addidas-btm-wrapper').addClass('animated slideOutLeft');
-                // Fires bottom wrapper on second image
-                setTimeout(function() {
-                    $('#addidas-top-wrapper').addClass('animated slideOutRight');
+        setTimeout(function() {
+            $('#addidas-btm-wrapper').addClass('animated slideOutLeft');
+            $('#btm-roller').show().addClass('animated slideOutLeft');
+            $('#btm-roller-img').addClass('slideLeft');
+            // Fires bottom wrapper on second image
+            setTimeout(function() {
+                $('#btm-roller').hide();
 
-                }, 700)
+                $('#addidas-top-wrapper').addClass('animated slideOutRight');
+                $('#top-roller').show().addClass('animated slideOutRight');
+                $('#top-roller-img').addClass('slideRight');
+
+            }, 700)
+            $('#top-roller').hide();
         }, 6000)
 
         // Fires off snippet for fifth image
-        setTimeout(function(){
-                $('#jovan-btm-wrapper').addClass('animated slideOutLeft');
-                // Fires bottom wrapper on second image
-                setTimeout(function() {
-                    $('#jovan-top-wrapper').addClass('animated slideOutRight');
+        setTimeout(function() {
+            $('#jovan-btm-wrapper').addClass('animated slideOutLeft');
+            $('#btm-roller').show().addClass('animated slideOutLeft');
+            $('#btm-roller-img').addClass('slideLeft');
+            // Fires bottom wrapper on second image
+            setTimeout(function() {
+                $('#btm-roller').hide();
 
-                }, 700)
+                $('#jovan-top-wrapper').addClass('animated slideOutRight');
+                $('#top-roller').show().addClass('animated slideOutRight');
+                $('#top-roller-img').addClass('slideRight');
+
+            }, 700)
+            $('#top-roller').hide();
         }, 8000)
 
         // Fires off snippet for fifth image
-        setTimeout(function(){
-                $('#final-wrapper').addClass('animateds slideOutLeft');
-                // Fires bottom wrapper on second image
-                setTimeout(function() {
-                    $('#tag-wrapper').addClass('animateds slideInRight');
+        setTimeout(function() {
+            $('#final-wrapper').addClass('animateds slideOutLeft');
+            // Fires bottom wrapper on second image
+            setTimeout(function() {
+                $('#tag-wrapper').addClass('animateds slideInRight');
 
-                }, 0)
+            }, 0)
         }, 10000)
 
 

@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Banner Ad Demo</title>
 
-   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+    <link rel="stylesheet" href="http://www.justinaguilar.com/animations/css/animations.css" />
     <link rel="stylesheet" href="./public/css/style.css">
 
 </head>
@@ -16,17 +17,28 @@
 
     <main>
       <div class="css-wrapper">
-        
+
         <div class="full-column">
           Here we are going to animate these divs as if a gift is opening!
         </div>
 
         <div class="full-column-offset">
+
+            <!-- Roller Spans -->
+        <div id="btm-roller" class="hide-roller">
+            <img src="./public/assets/bottom-roller.png" id="btm-roller-img" />
+        </div>
+        <div id="top-roller" class="hide-roller">
+            <img src="./public/assets/top-roller.png" id="top-roller-img" />
+        </div>
+            <!-- Roller Spans -->
+
         <!-- Initial Slide -->
           <div class="show-media" id="top-media" >
             <img src="./public/assets/nautica/top-half.png"  class="unwrap-img-right">
           </div>
           <div class="show-media" id="bottom-media">
+
             <img src="./public/assets/nautica/bottom-half.png" class="unwrap-img-left" height="151px">
           </div>
           <!-- Additional Product Images -->

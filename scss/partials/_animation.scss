@@ -36,12 +36,14 @@
   from {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+    width: 100%;
   }
 
   to {
     visibility: hidden;
     -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
+    width: 0;
   }
 }
 
@@ -49,12 +51,14 @@
   from {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+    width: 100%;
   }
 
   to {
     visibility: hidden;
     -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
+    width: 0;
   }
 }
 
@@ -67,12 +71,14 @@
   from {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+    width: 100%;
   }
 
   to {
     visibility: hidden;
     -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);
+    width: 100%;
   }
 }
 
@@ -80,12 +86,14 @@
   from {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+    width: 100%;
   }
 
   to {
     visibility: hidden;
     -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);
+    width: 100%;
   }
 }
 
@@ -164,32 +172,41 @@
 .hidden {
   z-index: -1;
 }
-.soft-hide {
-  z-index: 1;
-}
 
 /*img wrapper */
 
 #stetson {
   .show-media {
     z-index: -1;
+    position: absolute;
+    width: 100%;
+  }
+  #top-media {
+    top: 0;
+    right: 0;
   }
 }
 
 #addidas {
   .show-media {
     z-index: -2;
+    position: absolute;
+    width: 100%;
   }
 }
 
 #jovan {
   .show-media {
     z-index: -3;
+    position: absolute;
+    width: 100%;
   }
 }
 
 #final {
   .show-media {
     z-index: -4;
+    position: absolute;
+    width: 100%;
   }
 }

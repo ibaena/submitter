@@ -276,20 +276,24 @@ html {
 @-webkit-keyframes slideOutLeft {
   from {
     -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); }
+    transform: translate3d(0, 0, 0);
+    width: 100%; }
   to {
     visibility: hidden;
     -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0); } }
+    transform: translate3d(-100%, 0, 0);
+    width: 0; } }
 
 @keyframes slideOutLeft {
   from {
     -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); }
+    transform: translate3d(0, 0, 0);
+    width: 100%; }
   to {
     visibility: hidden;
     -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0); } }
+    transform: translate3d(-100%, 0, 0);
+    width: 0; } }
 
 .slideOutLeft {
   -webkit-animation-name: slideOutLeft;
@@ -298,20 +302,24 @@ html {
 @-webkit-keyframes slideOutRight {
   from {
     -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); }
+    transform: translate3d(0, 0, 0);
+    width: 100%; }
   to {
     visibility: hidden;
     -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0); } }
+    transform: translate3d(100%, 0, 0);
+    width: 100%; } }
 
 @keyframes slideOutRight {
   from {
     -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); }
+    transform: translate3d(0, 0, 0);
+    width: 100%; }
   to {
     visibility: hidden;
     -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0); } }
+    transform: translate3d(100%, 0, 0);
+    width: 100%; } }
 
 .slideOutRight {
   -webkit-animation-name: slideOutRight;
@@ -398,21 +406,30 @@ html {
 .hidden {
   z-index: -1; }
 
-.soft-hide {
-  z-index: 1; }
-
 /*img wrapper */
 #stetson .show-media {
-  z-index: -1; }
+  z-index: -1;
+  position: absolute;
+  width: 100%; }
+
+#stetson #top-media {
+  top: 0;
+  right: 0; }
 
 #addidas .show-media {
-  z-index: -2; }
+  z-index: -2;
+  position: absolute;
+  width: 100%; }
 
 #jovan .show-media {
-  z-index: -3; }
+  z-index: -3;
+  position: absolute;
+  width: 100%; }
 
 #final .show-media {
-  z-index: -4; }
+  z-index: -4;
+  position: absolute;
+  width: 100%; }
 
 body {
   background-image: url("http://i.stack.imgur.com/1Tzky.png");

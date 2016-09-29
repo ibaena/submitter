@@ -27,12 +27,12 @@ $(document).ready(function() {
         setTimeout(function(){
             if (unwrapBtm && unwrapTop === true){
                 $('#bottom-media').addClass('animated slideOutLeft');
-                
+
 
                 // Fires bottom wrapper on second image
                 setTimeout(function() {
-                    $('#top-media').addClass('animated slideOutRight');
-                   
+                    $('#top-media').addClass('animated slideOutRight').animate({ width: '0', right: '-25%' }, 1500, 'swing');;
+
 
                 }, 700)
             }
