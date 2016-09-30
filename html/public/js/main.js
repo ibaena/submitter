@@ -33,9 +33,9 @@ $(document).ready(function() {
             $('#btm-roller').hide();
             if (unwrapBtm && unwrapTop === true) {
                 $('#bottom-media').animate({width:'0%'},500);
-                setTimeout(function() {
-                    $('.unwrap-img-left').fadeOut('001');
-                }, 100)
+
+                    $('.unwrap-img-left').attr('src', '../public/assets/4way/banner-bg-bottom.png');
+
 
                 $('#btm-roller').show().addClass('animated slideOutLeft');
                 $('#btm-roller-img').addClass('slideLeft');
@@ -45,7 +45,7 @@ $(document).ready(function() {
                     $('#btm-roller').hide();
 
                     $('#top-media').addClass('animated slideOutRight');
-                    $('.unwrap-img-right').fadeOut('2000');
+                    $('.unwrap-img-right').attr('src', '../public/assets/4way/banner-bg-top.png');
                     $('#top-roller').show().addClass('animated slideOutRight');
                     $('#top-roller-img').addClass('slideRight');
 
