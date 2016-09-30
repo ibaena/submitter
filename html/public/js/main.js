@@ -32,7 +32,11 @@ $(document).ready(function() {
         setTimeout(function() {
             $('#btm-roller').hide();
             if (unwrapBtm && unwrapTop === true) {
-                $('#bottom-media').addClass('animated slideOutLeft');
+                $('#bottom-media').animate({width:'0%'},500);
+                setTimeout(function() {
+                    $('.unwrap-img-left').fadeOut('001');
+                }, 100)
+
                 $('#btm-roller').show().addClass('animated slideOutLeft');
                 $('#btm-roller-img').addClass('slideLeft');
 
@@ -41,6 +45,7 @@ $(document).ready(function() {
                     $('#btm-roller').hide();
 
                     $('#top-media').addClass('animated slideOutRight');
+                    $('.unwrap-img-right').fadeOut('2000');
                     $('#top-roller').show().addClass('animated slideOutRight');
                     $('#top-roller-img').addClass('slideRight');
 
@@ -52,7 +57,8 @@ $(document).ready(function() {
 
         // Fires off snippet for third image
         setTimeout(function() {
-            $('#stetson-btm-wrapper').addClass('animated slideOutLeft');
+            $('#stetson-btm-wrapper').animate({width:'0%'},500);
+            $('#stetson-img-btm').fadeOut('2000');
             $('#btm-roller').show().addClass('animated slideOutLeft');
             $('#btm-roller-img').addClass('slideLeft');
             // Fires bottom wrapper on second image
@@ -60,6 +66,7 @@ $(document).ready(function() {
                 $('#btm-roller').hide();
 
                 $('#stetson-top-wrapper').addClass('animated slideOutRight');
+                $('#stetson-img-top').fadeOut('2000');
                 $('#top-roller').show().addClass('animated slideOutRight');
                 $('#top-roller-img').addClass('slideRight');
 
@@ -69,7 +76,8 @@ $(document).ready(function() {
 
         // Fires off snippet for fourth image
         setTimeout(function() {
-            $('#addidas-btm-wrapper').addClass('animated slideOutLeft');
+            $('#addidas-btm-wrapper').animate({width:'0%'},500);
+            $('#addidas-img-btm').fadeOut('2000');
             $('#btm-roller').show().addClass('animated slideOutLeft');
             $('#btm-roller-img').addClass('slideLeft');
             // Fires bottom wrapper on second image
@@ -77,6 +85,7 @@ $(document).ready(function() {
                 $('#btm-roller').hide();
 
                 $('#addidas-top-wrapper').addClass('animated slideOutRight');
+                $('#addidas-img-top').fadeOut('2000');
                 $('#top-roller').show().addClass('animated slideOutRight');
                 $('#top-roller-img').addClass('slideRight');
 
@@ -86,7 +95,8 @@ $(document).ready(function() {
 
         // Fires off snippet for fifth image
         setTimeout(function() {
-            $('#jovan-btm-wrapper').addClass('animated slideOutLeft');
+            $('#jovan-btm-wrapper').animate({width:'0%'},500);
+            $('#jovan-img-btm').fadeOut('2000');
             $('#btm-roller').show().addClass('animated slideOutLeft');
             $('#btm-roller-img').addClass('slideLeft');
             // Fires bottom wrapper on second image
@@ -94,6 +104,7 @@ $(document).ready(function() {
                 $('#btm-roller').hide();
 
                 $('#jovan-top-wrapper').addClass('animated slideOutRight');
+                $('#jovan-img-top').fadeOut('2000');
                 $('#top-roller').show().addClass('animated slideOutRight');
                 $('#top-roller-img').addClass('slideRight');
 
