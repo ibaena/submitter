@@ -546,6 +546,19 @@ html {
 
 
 /*img wrapper */
+#nautica-img-top-bg {
+    z-index: -1;
+}
+
+#nautica-img-bottom-bg {
+    z-index: -1;
+}
+#nautica-img-top {
+    z-index: 1;
+}
+#nautica-img-btm {
+    z-index: 1;
+}
 
 #stetson .show-media {
     z-index: -1;

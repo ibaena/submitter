@@ -32,9 +32,9 @@ $(document).ready(function() {
         setTimeout(function() {
             $('#btm-roller').hide();
             if (unwrapBtm && unwrapTop === true) {
-                $('#bottom-media').animate({width:'0%'},750);
-                $('#nautica-img-btm').fadeOut('700').attr('src', '../public/assets/4way/banner-bg-bottom.png');
-                // $('.unwrap-img-left').attr('src', '../public/assets/4way/banner-bg-bottom.png');
+                $('#bottom-media').animate({width:'0%'},500);
+                // $('#nautica-img-btm').fadeOut('700');
+                $('.unwrap-img-left').attr('src', '../public/assets/4way/banner-bg-bottom.png');
 
 
                 $('#btm-roller').show().addClass('animated slideOutLeft');
@@ -45,8 +45,8 @@ $(document).ready(function() {
                     $('#btm-roller').hide();
 
                     $('#top-media').addClass('animated slideOutRight');
-                    // $('.unwrap-img-right').attr('src', '../public/assets/4way/banner-bg-top.png');
-                    $('#nautica-img-top').fadeOut('700').attr('src', '../public/assets/4way/banner-bg-top.png');
+                    $('.unwrap-img-right').attr('src', '../public/assets/4way/banner-bg-top.png');
+                    // $('#nautica-img-top').fadeOut('700');
                     $('#top-roller').show().addClass('animated slideOutRight');
                     $('#top-roller-img').addClass('slideRight');
 
@@ -58,7 +58,7 @@ $(document).ready(function() {
 
         // Fires off snippet for third image (Stetson)
         setTimeout(function() {
-            $('#stetson-btm-wrapper').animate({width:'0%'},750);
+            $('#stetson-btm-wrapper').animate({width:'0%'},500);
             $('.stetson-unwrap-img-left').attr('src', '../public/assets/4way/banner-bg-bottom.png');
             $('#stetson-img-btm').fadeOut('700');
             $('#btm-roller').show().addClass('animated slideOutLeft');
@@ -76,7 +76,7 @@ $(document).ready(function() {
 
             }, 700)
             $('#top-roller').hide();
-        }, 4000)
+        }, 6000)
 
         // Fires off snippet for fourth image (Adidas)
         setTimeout(function() {
@@ -95,7 +95,7 @@ $(document).ready(function() {
 
             }, 700)
             $('#top-roller').hide();
-        }, 6000)
+        }, 8000)
 
         // Fires off snippet for fifth image (Jovan)
         setTimeout(function() {
@@ -114,7 +114,7 @@ $(document).ready(function() {
 
             }, 700)
             $('#top-roller').hide();
-        }, 8000)
+        }, 10000)
 
         // Fires off snippet for fifth image (3 Gift Sets)
         setTimeout(function() {
@@ -124,7 +124,7 @@ $(document).ready(function() {
                 $('#tag-wrapper').addClass('animateds slideInRight');
 
             }, 0)
-        }, 10000)
+        }, 12000)
 
 
 
